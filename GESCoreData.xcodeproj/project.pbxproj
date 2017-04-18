@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1AF9D51EA6772200BAAEFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AF9D31EA6772200BAAEFD /* HomeViewController.swift */; };
+		CA1AF9D61EA6772200BAAEFD /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA1AF9D41EA6772200BAAEFD /* HomeViewController.xib */; };
+		CA1AF9D81EA6781C00BAAEFD /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AF9D71EA6781C00BAAEFD /* FileUtils.swift */; };
+		CA1AF9DA1EA6786300BAAEFD /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1AF9D91EA6786300BAAEFD /* CoreDataManager.swift */; };
 		CA4FEA6D1EA6644C00F97885 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FEA6C1EA6644C00F97885 /* AppDelegate.swift */; };
-		CA4FEA6F1EA6644C00F97885 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FEA6E1EA6644C00F97885 /* ViewController.swift */; };
-		CA4FEA721EA6644C00F97885 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4FEA701EA6644C00F97885 /* Main.storyboard */; };
 		CA4FEA751EA6644C00F97885 /* GESCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA4FEA731EA6644C00F97885 /* GESCoreData.xcdatamodeld */; };
 		CA4FEA771EA6644C00F97885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4FEA761EA6644C00F97885 /* Assets.xcassets */; };
 		CA4FEA7A1EA6644C00F97885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4FEA781EA6644C00F97885 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA1AF9D31EA6772200BAAEFD /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CA1AF9D41EA6772200BAAEFD /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		CA1AF9D71EA6781C00BAAEFD /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		CA1AF9D91EA6786300BAAEFD /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CA4FEA691EA6644C00F97885 /* GESCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GESCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4FEA6C1EA6644C00F97885 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA4FEA6E1EA6644C00F97885 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CA4FEA711EA6644C00F97885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA4FEA741EA6644C00F97885 /* GESCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GESCoreData.xcdatamodel; sourceTree = "<group>"; };
 		CA4FEA761EA6644C00F97885 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4FEA791EA6644C00F97885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				CA4FEA6C1EA6644C00F97885 /* AppDelegate.swift */,
-				CA4FEA6E1EA6644C00F97885 /* ViewController.swift */,
-				CA4FEA701EA6644C00F97885 /* Main.storyboard */,
 				CA4FEA761EA6644C00F97885 /* Assets.xcassets */,
 				CA4FEA781EA6644C00F97885 /* LaunchScreen.storyboard */,
 				CA4FEA7B1EA6644C00F97885 /* Info.plist */,
 				CA4FEA731EA6644C00F97885 /* GESCoreData.xcdatamodeld */,
+				CA1AF9D31EA6772200BAAEFD /* HomeViewController.swift */,
+				CA1AF9D41EA6772200BAAEFD /* HomeViewController.xib */,
+				CA1AF9D71EA6781C00BAAEFD /* FileUtils.swift */,
+				CA1AF9D91EA6786300BAAEFD /* CoreDataManager.swift */,
 			);
 			path = GESCoreData;
 			sourceTree = "<group>";
@@ -128,7 +134,7 @@
 			files = (
 				CA4FEA7A1EA6644C00F97885 /* LaunchScreen.storyboard in Resources */,
 				CA4FEA771EA6644C00F97885 /* Assets.xcassets in Resources */,
-				CA4FEA721EA6644C00F97885 /* Main.storyboard in Resources */,
+				CA1AF9D61EA6772200BAAEFD /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,22 +146,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4FEA751EA6644C00F97885 /* GESCoreData.xcdatamodeld in Sources */,
-				CA4FEA6F1EA6644C00F97885 /* ViewController.swift in Sources */,
 				CA4FEA6D1EA6644C00F97885 /* AppDelegate.swift in Sources */,
+				CA1AF9D51EA6772200BAAEFD /* HomeViewController.swift in Sources */,
+				CA1AF9DA1EA6786300BAAEFD /* CoreDataManager.swift in Sources */,
+				CA1AF9D81EA6781C00BAAEFD /* FileUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CA4FEA701EA6644C00F97885 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CA4FEA711EA6644C00F97885 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CA4FEA781EA6644C00F97885 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -303,6 +303,7 @@
 				CA4FEA801EA6644C00F97885 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
