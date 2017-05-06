@@ -1,18 +1,15 @@
 //
-//  HomeViewController.swift
+//  AddStudentViewController.swift
 //  GESCoreData
 //
-//  Created by gilles Goncalves on 18/04/2017.
+//  Created by gilles Goncalves on 06/05/2017.
 //  Copyright © 2017 gilles et julien. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class AddStudentViewController: UIViewController {
 
-    @IBOutlet weak var coursesList: UITableView!
-    @IBOutlet weak var navigationBar: UINavigationBar!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -15,7 +15,7 @@ class CoreDataManager: NSObject {
     public var context: NSManagedObjectContext?
     
     private override init() {
-        guard let schema = Bundle.main.url(forResource: "SimpleCoreData", withExtension: "momd") else{
+        guard let schema = Bundle.main.url(forResource: "GESCoreData", withExtension: "momd") else{
             return
         }
         guard let model = NSManagedObjectModel(contentsOf : schema)else{
@@ -23,9 +23,9 @@ class CoreDataManager: NSObject {
         }
         
         let store = NSPersistentStoreCoordinator(managedObjectModel: model)
-        print(FileUtils.getDocumentFile(at: "simple.sqlite").path)
+        print(FileUtils.getDocumentFile(at: "myges.sqlite").path)
         do{
-            try store.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: FileUtils.getDocumentFile(at: "simple.sqlite"), options: nil)
+            try store.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: FileUtils.getDocumentFile(at: "myges.sqlite"), options: nil)
         } catch {
             print(error)
             return
