@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class FileUtils: NSObject {
 
@@ -18,5 +19,10 @@ class FileUtils: NSObject {
     class func getDocumentFile(at path: String)-> URL{
         let parent = self.getDocumentDirectory()
         return parent.appendingPathComponent(path)
+    }
+    
+    class func afficheMsg(label:UILabel, msg:String, color: UIColor){
+        label.text = msg
+        label.textColor = color
     }
 }

@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let nv = UINavigationController(rootViewController: HomeViewController())
+        nv.navigationBar.barStyle = UIBarStyle.black
+        nv.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blue]
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = nv
         window.makeKeyAndVisible()
